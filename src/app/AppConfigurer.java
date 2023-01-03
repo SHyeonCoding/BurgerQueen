@@ -6,7 +6,6 @@ import app.discount.discountCondition.DiscountCondition;
 import app.discount.discountCondition.KidDiscountCondition;
 import app.discount.discountPolicy.FixedAmountDiscountPolicy;
 import app.discount.discountPolicy.FixedRateDiscountPolicy;
-import app.product.Product;
 import app.product.ProductRepository;
 
 public class AppConfigurer {

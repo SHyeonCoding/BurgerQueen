@@ -1,11 +1,6 @@
 package app;
 
 import app.discount.Discount;
-import app.discount.discountCondition.CozDiscountCondition;
-import app.discount.discountCondition.DiscountCondition;
-import app.discount.discountCondition.KidDiscountCondition;
-import app.discount.discountPolicy.FixedAmountDiscountPolicy;
-import app.discount.discountPolicy.FixedRateDiscountPolicy;
 
 public class Order {
     private Cart cart;

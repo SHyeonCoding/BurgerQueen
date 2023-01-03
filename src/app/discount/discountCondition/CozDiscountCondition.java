@@ -1,7 +1,6 @@
 package app.discount.discountCondition;
 
 import app.discount.discountPolicy.DiscountPolicy;
-import app.discount.discountPolicy.FixedRateDiscountPolicy;
 
 import java.util.Scanner;
 
