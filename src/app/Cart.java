@@ -38,7 +38,7 @@ public class Cart {
             if(product instanceof BurgerSet) {
                 BurgerSet burgerSet = (BurgerSet) product;
                 System.out.printf(
-                        "%s %6d원 (%s(케첩 %d개), %s(빨대 %s))\n",
+                        "%-8s %6d원 (%s(케첩 %d개), %s(빨대 %s))\n",
                         product.getName(),
                         product.getPrice(),
                         burgerSet.getSide().getName(),
@@ -49,14 +49,14 @@ public class Cart {
             }
             else if(product instanceof Hamburger) {
                 System.out.printf(
-                        "    %-8s %6d원 (단품)\n",
+                        "  %-8s %6d원 (단품)\n",
                         product.getName(),
                         product.getPrice()
                 );
             }
             else if(product instanceof Side) {
                 System.out.printf(
-                        "    %-8s %6d원 (케첩 %d개)\n",
+                        "  %-8s %6d원 (케첩 %d개)\n",
                         product.getName(),
                         product.getPrice(),
                         ((Side)product).getKetchup()
@@ -64,7 +64,7 @@ public class Cart {
             }
             else if(product instanceof Drink) {
                 System.out.printf(
-                        "    %-8s %6d원 (빨대 %s)\n",
+                        "  %-8s %6d원 (빨대 %s)\n",
                         product.getName(),
                         product.getPrice(),
                         ((Drink)product).hasStraw() ? "있음" : "없음"
